@@ -1,8 +1,6 @@
 //
 //  AppDelegate.swift
-//  TumblrFeedrClean
-//
-//  Created by Phanuelle Manuel on 4/3/25.
+//  ios101-project5-tumbler
 //
 
 import UIKit

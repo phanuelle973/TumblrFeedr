@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		329978BA2D9F61A8002FF613 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 329978B92D9F61A8002FF613 /* Nuke */; };
+		329978BC2D9F61A8002FF613 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 329978BB2D9F61A8002FF613 /* NukeExtensions */; };
+		329978BE2D9F61A8002FF613 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 329978BD2D9F61A8002FF613 /* NukeUI */; };
+		329978C02D9F61A8002FF613 /* NukeVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 329978BF2D9F61A8002FF613 /* NukeVideo */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3299788D2D9F5C58002FF613 /* TumblrFeedrClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrFeedrClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329978BE2D9F61A8002FF613 /* NukeUI in Frameworks */,
+				329978BA2D9F61A8002FF613 /* Nuke in Frameworks */,
+				329978BC2D9F61A8002FF613 /* NukeExtensions in Frameworks */,
+				329978C02D9F61A8002FF613 /* NukeVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				3299788F2D9F5C58002FF613 /* TumblrFeedrClean */,
+				329978B82D9F61A8002FF613 /* Frameworks */,
 				3299788E2D9F5C58002FF613 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +68,13 @@
 				3299788D2D9F5C58002FF613 /* TumblrFeedrClean.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		329978B82D9F61A8002FF613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +97,10 @@
 			);
 			name = TumblrFeedrClean;
 			packageProductDependencies = (
+				329978B92D9F61A8002FF613 /* Nuke */,
+				329978BB2D9F61A8002FF613 /* NukeExtensions */,
+				329978BD2D9F61A8002FF613 /* NukeUI */,
+				329978BF2D9F61A8002FF613 /* NukeVideo */,
 			);
 			productName = TumblrFeedrClean;
 			productReference = 3299788D2D9F5C58002FF613 /* TumblrFeedrClean.app */;
@@ -107,6 +130,9 @@
 			);
 			mainGroup = 329978842D9F5C58002FF613;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				329978B72D9F5E65002FF613 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3299788E2D9F5C58002FF613 /* Products */;
 			projectDirPath = "";
@@ -335,6 +361,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		329978B72D9F5E65002FF613 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		329978B92D9F61A8002FF613 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329978B72D9F5E65002FF613 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		329978BB2D9F61A8002FF613 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329978B72D9F5E65002FF613 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		329978BD2D9F61A8002FF613 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329978B72D9F5E65002FF613 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		329978BF2D9F61A8002FF613 /* NukeVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329978B72D9F5E65002FF613 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeVideo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 329978852D9F5C58002FF613 /* Project object */;
 }
